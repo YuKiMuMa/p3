@@ -1,21 +1,30 @@
 <template>
     <div class="container">
-      <div class="parent">
-        <div class="child">あ</div>
-        <div class="child">い</div>
-        <div class="child">う</div>
-        <div class="child">え</div>
-        <div class="child">お</div>
-        <div class="child">
-          <img class="sa_img" src = "/image/EqtZCtjUcAYoatf.jpg">
-        </div>
-      </div>
+        <section id="posts">
+          <a href="/works/posts/miku" title="miku" class="post" style="background-image: url(/image/i163.png);"><h2>miku</h2><p class="lead">22.06.2021</p></a>
+          <a href="/works/posts/color_of_winter" title="color_of_winter" class="post" style="background-image: url(/image/EqtZCtjUcAYoatf.jpg);"><h2>冬の色</h2><p class="lead">02.01.2021</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/nature);"><h2>Another title on a post</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/people);"><h2>Posts are better with titles</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Some titles are better than others</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/grayscale);"><h2>Titles can be long</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/sepia);"><h2>Short titles are a thing too</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>As long as they look different</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Lorem ipsum sucks</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>A title of a page here</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/arch);"><h2>This post has a title</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/nature);"><h2>Another title on a post</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/people);"><h2>Posts are better with titles</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Some titles are better than others</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/grayscale);"><h2>Titles can be long</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/sepia);"><h2>Short titles are a thing too</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>As long as they look different</h2><p class="lead">By Author name</p></a>
+          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Lorem ipsum sucks</h2><p class="lead">By Author name</p></a>
+        </section>
     </div>
 </template>
 
 <script>
 export default {
-  layout: 'default',
 }
 </script>
 
@@ -23,54 +32,79 @@ export default {
 .container {
   padding-top: 100px;
   padding-bottom: 100px;
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+body {
+  background-color:#fff;
+}
+#posts {
   text-align: center;
-  animation: 1s appear;
+  font-size: 0;
 }
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
+#posts .post {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border: 3px solid #fff;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  transition: all 300ms ease-out;
+}
+#posts .post h2 {
+  color:#fff;
+  position: absolute;
+  bottom: 50px;
+  margin: 0;
+  font-size: 1.5vw;
+  line-height: 0.8;
+  font-family: 'MuseoSansRounded-900', 'Arial Black', sans-serif;
+  padding: 0 40px;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 1000;
+}
+#posts .post p {
+  color:#fff;
+  position: absolute;
+  bottom: 25px;
+  margin: 0;
+  font-size: 0.8vw;
+  line-height: 0.8;
+  padding: 0 40px;
+  text-transform: capitalize;
+  text-align: left;
+  z-index: 1000;
+}
+#posts .post:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #000;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity=50);
+  transition: all 300ms ease-out;
+  content: '';
+  z-index: 10;
+}
+#posts .post:hover:before {
+  opacity: 0.2;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+  filter: alpha(opacity=20);
 }
 
-.sa_img{
-  width:200px;
-  height: 112.5px;
-  object-fit: cover;
-}
 
-.parent {
-  font-size: 2rem;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  background: lightblue;
-  display: flex;
-}
 
-.child {
-  font-size: 2rem;
-  text-align: center;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  background: lightgreen;
-  width: 250px;
-}
+/* === MEDIA QUERIES === */
 
-@media screen and (max-width: 1600px) {
-  .parent {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .parent {
-    display: block;
-  }
-}
+/* MOBILE FIRST */
+/* XS */ 
+/* SM */ @media (min-width: 34em) {#posts .post {width:50%;}}
+/* MD */ @media (min-width: 48em) {#posts .post {width:25%;}}
+/* LG */ @media (min-width: 62em) {#posts .post {width:33.33333333%;}}
+/* XL */ @media (min-width: 75em) {#posts .post {width:25%;}}
 </style>

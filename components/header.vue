@@ -44,6 +44,7 @@ body {
     top: 0;
     display: flex;
     align-items: center;
+    z-index: 9999;
 }
 h1 {
    margin: 0; padding: 0;
