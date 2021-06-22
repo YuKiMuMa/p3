@@ -35,6 +35,7 @@ export default {
 <style>
 .container {
   padding-top: 100px;
+  padding-bottom: 100px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
