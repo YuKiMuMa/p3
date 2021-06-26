@@ -1,30 +1,54 @@
 <template>
     <div class="container">
-        <section id="posts">
-          <a href="/blog/posts/test" title="A title of a page here" class="post" style="background-image: url(/image/i163.png);"><h2>A title of a page here</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(/image/EqtZCtjUcAYoatf.jpg);"><h2>This post has a title</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/nature);"><h2>Another title on a post</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/people);"><h2>Posts are better with titles</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Some titles are better than others</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/grayscale);"><h2>Titles can be long</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/sepia);"><h2>Short titles are a thing too</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>As long as they look different</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Lorem ipsum sucks</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>A title of a page here</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/arch);"><h2>This post has a title</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/nature);"><h2>Another title on a post</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/people);"><h2>Posts are better with titles</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Some titles are better than others</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/grayscale);"><h2>Titles can be long</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/sepia);"><h2>Short titles are a thing too</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>As long as they look different</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Lorem ipsum sucks</h2><p class="lead">By Author name</p></a>
-        </section>
+      <ul class="card-list">
+  
+        <li class="card">
+          <a class="card-image" href="/works/posts/miku" target="_blank" style="background-image: url(/image/i163.png);" data-image-full="/image/i163.png">
+            <img src="" alt="Psychopomp" />
+          </a>
+          <a class="card-description" href="/works/posts/miku" target="_blank">
+            <h2>Psychopomp</h2>
+            <p>Japanese Breakfast</p>
+          </a>
+        </li>
+        
+        <li class="card">
+          <a class="card-image" href="https://inlovewithaghost.bandcamp.com/album/lets-go" target="_blank" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/lets-go-100.jpg);" data-image-full="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/lets-go-500.jpg">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/lets-go-100.jpg" alt="let's go" />
+          </a>
+          <a class="card-description" href="https://inlovewithaghost.bandcamp.com/album/lets-go" target="_blank">
+            <h2>let's go</h2>
+            <p>In Love With A Ghost</p>
+          </a>
+        </li>
+        
+        <li class="card">
+          <a class="card-image" href="https://vulfpeck.bandcamp.com/album/the-beautiful-game" target="_blank" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/beautiful-game-100.jpg);" data-image-full="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/beautiful-game-500.jpg">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/beautiful-game-100.jpg" alt="The Beautiful Game" />
+          </a>
+          <a class="card-description" href="https://vulfpeck.bandcamp.com/album/the-beautiful-game" target="_blank">
+            <h2>The Beautiful Game</h2>
+            <p>Vulfpeck</p>
+          </a>
+        </li>
+        
+        <li class="card">
+          <a class="card-image" href="https://convergecult.bandcamp.com/album/jane-doe" target="_blank" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/jane-doe-100.jpg);" data-image-full="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/jane-doe-500.jpg">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/jane-doe-100.jpg" alt="Jane Doe" />
+          </a>
+          <a class="card-description" href="https://convergecult.bandcamp.com/album/jane-doe" target="_blank">
+            <h2>Jane Doe</h2>
+            <p>Converge</p>
+          </a>
+        </li>
+        
+      </ul>
     </div>
 </template>
 
 <script>
 export default {
+  
 }
 </script>
 
@@ -33,78 +57,53 @@ export default {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-body {
-  background-color:#000;
-}
-#posts {
-  text-align: center;
-  font-size: 0;
-}
-#posts .post {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  margin: 0;
-  border: 3px solid #000;
-  display: inline-block;
-  background-size: cover;
-  background-position: center center;
-  transition: all 300ms ease-out;
-}
-#posts .post h2 {
-  color:#fff;
-  position: absolute;
-  bottom: 80px;
-  margin: 0;
-  font-size: 2vw;
-  line-height: 0.8;
-  font-family: 'MuseoSansRounded-900', 'Arial Black', sans-serif;
-  padding: 0 60px;
-  text-transform: uppercase;
-  text-align: left;
-  z-index: 1000;
-}
-#posts .post p {
-  color:#fff;
-  position: absolute;
-  bottom: 40px;
-  margin: 0;
-  font-size: 1.5vw;
-  line-height: 0.8;
-  padding: 0 60px;
-  text-transform: capitalize;
-  text-align: left;
-  z-index: 1000;
-}
-#posts .post:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.card-image {
   display: block;
-  background: #000;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
-  transition: all 300ms ease-out;
-  content: '';
-  z-index: 10;
-}
-#posts .post:hover:before {
-  opacity: 0.2;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
-  filter: alpha(opacity=20);
 }
 
+.card-image > img {
+  display: block;
+}
 
+.card-image.is-loaded {
+  filter: none; /* remove the blur on fullres image */
+  transition: filter 1s;
+}
 
-/* === MEDIA QUERIES === */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* MOBILE FIRST */
-/* XS */ 
-/* SM */ @media (min-width: 34em) {#posts .post {width:50%;}}
-/* MD */ @media (min-width: 48em) {#posts .post {width:25%;}}
-/* LG */ @media (min-width: 62em) {#posts .post {width:33.33333333%;}}
-/* XL */ @media (min-width: 75em) {#posts .post {width:25%;}}
+.card {
+  display: block;
+  width: 60%;
+  height:30%;
+  margin: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem) scale(1.0125);
+  box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-description {
+  display: block;
+  padding: 1em 0.5em;
+  color: #515151;
+}
+
+.card-description > h2 {
+  margin: 0 0 0.5em;
+}
+
+.card-description > p {
+  margin: 0;
+}
 </style>
