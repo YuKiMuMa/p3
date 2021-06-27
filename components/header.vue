@@ -46,25 +46,25 @@ body {
     align-items: center;
     z-index: 9999;
 }
-h1 {
+.header1 h1 {
    margin: 0; padding: 0;
    font-size: 20px;
 }
-a {	
+.header1 a {	
    text-decoration: none;
    color: #4b4b4b;
 }
-ul {
+.header1 ul {
    list-style: none;
    margin: 0;
    display: flex;
 }
-li {
+.header1 li {
    margin: 0 0 0 15px;
    font-size: 14px;
 }
 
-nav {
+.header1 nav {
    margin: 0 0 0 auto;
 }
 </style>

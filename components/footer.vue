@@ -51,7 +51,7 @@
 nav{
     display: flex;
 }
-a{
+.footer1 > a{
     margin:0 0 0 15px;
 }
 

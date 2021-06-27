@@ -3,22 +3,22 @@
       <ul class="card-list">
   
         <li class="card">
-          <a class="card-image" href="/works/posts/miku" target="_blank" style="background-image: url(/image/i163.png);" data-image-full="/image/i163.png">
-            <img src="" alt="Psychopomp" />
+          <a class="card-image" href="/blog/posts/test">
+            <img src="/image/i163.png" alt="Psychopomp" />
           </a>
-          <a class="card-description" href="/works/posts/miku" target="_blank">
+          <a class="card-description" href="/blog/posts/test" >
             <h2>Psychopomp</h2>
             <p>Japanese Breakfast</p>
           </a>
         </li>
         
         <li class="card">
-          <a class="card-image" href="https://inlovewithaghost.bandcamp.com/album/lets-go" target="_blank" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/lets-go-100.jpg);" data-image-full="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/lets-go-500.jpg">
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/310408/lets-go-100.jpg" alt="let's go" />
+          <a class="card-image" href="/blog/posts/test">
+            <img src="/image/i163.png" alt="Psychopomp" />
           </a>
-          <a class="card-description" href="https://inlovewithaghost.bandcamp.com/album/lets-go" target="_blank">
-            <h2>let's go</h2>
-            <p>In Love With A Ghost</p>
+          <a class="card-description" href="/blog/posts/test" >
+            <h2>Psychopomp</h2>
+            <p>Japanese Breakfast</p>
           </a>
         </li>
         
@@ -58,11 +58,17 @@ export default {
   padding-bottom: 100px;
 }
 .card-image {
-  display: block;
+  width: 100%;
+
 }
 
 .card-image > img {
-  display: block;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+  margin: 0.5em 0.5em 0.5em.5em;
+
 }
 
 .card-image.is-loaded {
@@ -84,8 +90,9 @@ export default {
   font-size: 1rem;
   text-decoration: none;
   overflow: hidden;
-  box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
   transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+  align-items: center;
+  background-color: #ffff;
 }
 
 .card:hover {
@@ -96,7 +103,6 @@ export default {
 .card-description {
   display: block;
   padding: 1em 0.5em;
-  color: #515151;
 }
 
 .card-description > h2 {
