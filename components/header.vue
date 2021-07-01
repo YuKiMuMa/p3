@@ -22,7 +22,7 @@
 </template>
 
 <style>
-* {
+.header1 * {
    box-sizing: border-box;
 }
 

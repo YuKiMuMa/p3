@@ -1,20 +1,27 @@
 <template>
     <div class="container">
-        <article id="35605295-9b64-44d8-b7c8-022c2889e472" class="page sans"><header><h1 class="page-title">Blog Test</h1></header><div class="page-body"><p id="f4d8dc0f-e683-42d5-bdd3-73edd9229af6" class="">これ、実はブログのテストなんですよね。知ってましたか？</p><h1 id="cc806cbf-6c51-43de-92f6-c56c48cd8968" class="">おならのランチはおならんち</h1><ul id="c836175b-1190-4656-912d-315f7fe2ace5" class="bulleted-list"><li>そう</li></ul><ul id="86778c8b-4c97-4d3d-9018-8a3f08040fd8" class="bulleted-list"><li>そうではない</li></ul><ul id="4de4ee1a-af0b-4f87-81a8-ba82d56d54b7" class="bulleted-list"><li></li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2c1289ec-85cf-471b-9f5f-5ad2820b2d5c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">！？</div></figure><pre id="3e95a06e-ebea-4a36-89df-28a370f7d2fd" class="code"><code>&lt;html&gt;
-        &lt;head&gt;
-        &lt;/head&gt;
-        &lt;/html&gt;</code></pre><p id="095a5e4e-5092-40f9-b353-963cddbb2ddf" class="">
+        <article id="35605295-9b64-44d8-b7c8-022c2889e472" class="page sans"><header><h1 class="page-title">Blog Test</h1></header><div class="page-body"><p id="f4d8dc0f-e683-42d5-bdd3-73edd9229af6" class="">これ、実はブログのテストなんですよね。知ってましたか？</p><h1 id="cc806cbf-6c51-43de-92f6-c56c48cd8968" class="">おならのランチはおならんち</h1><ul id="c836175b-1190-4656-912d-315f7fe2ace5" class="bulleted-list"><li>そう</li></ul><ul id="86778c8b-4c97-4d3d-9018-8a3f08040fd8" class="bulleted-list"><li>そうではない</li></ul><ul id="4de4ee1a-af0b-4f87-81a8-ba82d56d54b7" class="bulleted-list"><li></li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2c1289ec-85cf-471b-9f5f-5ad2820b2d5c"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">！？</div></figure>
+		<pre id="3e95a06e-ebea-4a36-89df-28a370f7d2fd" class="code">
+		<code>
+		&lt;html&gt;
+		&lt;head&gt;
+		&lt;/head&gt;
+		&lt;/html&gt;
+		</code></pre><p id="095a5e4e-5092-40f9-b353-963cddbb2ddf" class="">
         </p></div></article>
     </div>
 </template>
 
 <script>
 export default {
+
 }
 </script>
 
-<style>
+<style scoped>
 .container {
+	padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +52,7 @@ body {
 	white-space: pre-wrap;
 }
 
-a,
+.container a,
 a.visited {
 	color: inherit;
 	text-decoration: underline;
@@ -214,8 +221,8 @@ th {
 	color: rgba(55, 53, 47, 0.6);
 }
 
-ol,
-ul {
+.container ol,
+.container ul {
 	margin: 0;
 	margin-block-start: 0.6em;
 	margin-block-end: 0.6em;

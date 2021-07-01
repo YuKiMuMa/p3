@@ -16,6 +16,8 @@ export default {
     header1,
     footer1
   }
+  
+
 }
 </script>
 
