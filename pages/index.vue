@@ -74,7 +74,7 @@ export default {
   padding-top: 15px;
 }
 iframe {
-  animation: 1s appear;
+  animation: 3s appear;
   margin: auto;
   padding-top: 50px;
 }

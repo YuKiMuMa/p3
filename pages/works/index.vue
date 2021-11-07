@@ -1,30 +1,24 @@
 <template>
     <div class="container">
         <section id="posts">
-          <a href="/works/posts/miku" title="miku" class="post" style="background-image: url(/image/i163.png);"><h2>miku</h2><p class="lead">22.06.2021</p></a>
-          <a href="/works/posts/color_of_winter" title="color_of_winter" class="post" style="background-image: url(/image/EqtZCtjUcAYoatf.jpg);"><h2>冬の色</h2><p class="lead">02.01.2021</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/nature);"><h2>Another title on a post</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/people);"><h2>Posts are better with titles</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Some titles are better than others</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/grayscale);"><h2>Titles can be long</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/sepia);"><h2>Short titles are a thing too</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>As long as they look different</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Lorem ipsum sucks</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>A title of a page here</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/arch);"><h2>This post has a title</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/nature);"><h2>Another title on a post</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/people);"><h2>Posts are better with titles</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Some titles are better than others</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/grayscale);"><h2>Titles can be long</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/sepia);"><h2>Short titles are a thing too</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/animals);"><h2>As long as they look different</h2><p class="lead">By Author name</p></a>
-          <a href="#" title="A title of a page here" class="post" style="background-image: url(https://placeimg.com/640/480/tech);"><h2>Lorem ipsum sucks</h2><p class="lead">By Author name</p></a>
+          <div v-for="w in works" :key="w.slug"  class="post">
+            <nuxt-link :to="'/works/'+ w.slug">
+              <img :src="w.img" :alt="w.title + ' サムネイル'" class="item__img">
+              <h2>{{w.title}}</h2>
+              <p class="lead">{{w.date}}</p>
+            </nuxt-link>
+          </div>
         </section>
     </div>
 </template>
 
 <script>
 export default {
+ async asyncData ({ $content, params }) {
+   const query = await $content('works' || 'index').sortBy('date', 'desc')
+   const works = await query.fetch()
+   return { works }
+ }
 }
 </script>
 
@@ -33,12 +27,12 @@ export default {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-body {
-  background-color:#fff;
-}
 #posts {
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: center;
   font-size: 0;
+  animation: 1s appear;
 }
 #posts .post {
   position: relative;
@@ -50,6 +44,18 @@ body {
   background-size: cover;
   background-position: center center;
   transition: all 300ms ease-out;
+  overflow:hidden;
+}
+#posts .post img {
+  padding:0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms ease-out;
+}
+#posts .post:hover img {
+  transform:scale(1.1,1.1);
+  transition:0.8s all;
 }
 #posts .post h2 {
   color:#fff;
@@ -59,10 +65,15 @@ body {
   font-size: 1.5vw;
   line-height: 0.8;
   font-family: 'MuseoSansRounded-900', 'Arial Black', sans-serif;
-  padding: 0 40px;
+  padding: 0 30px;
   text-transform: uppercase;
   text-align: left;
   z-index: 1000;
+  opacity: 0;
+}
+#posts .post:hover h2 {
+  opacity: 1;
+  transition:0.8s all;
 }
 #posts .post p {
   color:#fff;
@@ -71,31 +82,18 @@ body {
   margin: 0;
   font-size: 0.8vw;
   line-height: 0.8;
-  padding: 0 40px;
+  padding: 0 30px;
   text-transform: capitalize;
   text-align: left;
   z-index: 1000;
+  opacity: 0;
 }
-#posts .post:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: #000;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
-  transition: all 300ms ease-out;
-  content: '';
-  z-index: 10;
+#posts .post:hover p {
+  opacity: 1;
+  transition:0.8s all;
 }
-#posts .post:hover:before {
-  opacity: 0.2;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
-  filter: alpha(opacity=20);
-}
+
+
 
 
 

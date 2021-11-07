@@ -14,7 +14,7 @@
       <nav class="pc-nav">
          <ul>
                <li><a href="/works">WORKS</a></li>
-               <li><a href="/blog">BLOG</a></li>
+               <li><a href="/blogs">BLOG</a></li>
                <li><a href="/contact">CONTACT</a></li>
          </ul>
       </nav>
@@ -30,7 +30,7 @@ body {
    margin: 0;
    padding: 0;
    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   background-color: #e6e6e6;
+   background-color: #fff;
 }
 .mumako{
    height: 40px;
@@ -40,7 +40,6 @@ body {
     width: 100%;
     padding: 30px 4% 10px;
     background-color: #fff;
-    position: fixed;
     top: 0;
     display: flex;
     align-items: center;
@@ -60,7 +59,7 @@ body {
    display: flex;
 }
 .header1 li {
-   margin: 0 0 0 15px;
+   margin: 0 0 0 30px;
    font-size: 14px;
 }
 
