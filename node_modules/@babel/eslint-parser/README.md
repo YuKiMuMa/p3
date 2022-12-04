@@ -49,8 +49,27 @@ With the parser set, your configuration can be configured as described in the [C
 
 Additional configuration options can be set in your ESLint configuration under the `parserOptions` key. Please note that the `ecmaFeatures` config property may still be required for ESLint to work properly with features not in ECMAScript 5 by default.
 
-- `requireConfigFile` (default `true`) can be set to `false` to allow @babel/eslint-parser to run on files that do not have a Babel configuration associated with them. This can be useful for linting files that are not transformed by Babel (such as tooling configuration files), though we recommend using the default parser via [glob-based configuration](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-based-on-glob-patterns). Note: @babel/eslint-parser will not parse any experimental syntax when no configuration file is found.
+- `requireConfigFile` (default `true`) can be set to `false` to allow @babel/eslint-parser to run on files that do not have a Babel configuration associated with them. This can be useful for linting files that are not transformed by Babel (such as tooling configuration files), though we recommend using the default parser via [glob-based configuration](https://eslint.org/docs/user-guide/configuring/configuration-files#configuration-based-on-glob-patterns).
+  Note: When `requireConfigFile` is `false`, @babel/eslint-parser will still try to load the root babel config. If no configuration file is found, @babel/eslint-parser will not parse any experimental syntax. Though not recommended, if you have a babel config, but would like to prevent @babel/eslint-parser from loading Babel config, please specify
+  **.eslintrc.js**
+
+```js
+module.exports = {
+  parser: "@babel/eslint-parser",
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      babelrc: false,
+      configFile: false,
+      // your babel options
+      presets: ["@babel/preset-env"],
+    },
+  },
+};
+```
+
 - `sourceType` can be set to `"module"`(default) or `"script"` if your code isn't using ECMAScript modules.
+<!-- TODO(Babel 8): Remove this -->
 - `allowImportExportEverywhere` (default `false`) can be set to `true` to allow import and export declarations to appear anywhere a statement is allowed if your build environment supports that. Otherwise import and export declarations can only appear at a program's top level.
 - `ecmaFeatures.globalReturn` (default `false`) allow return statements in the global scope when used with `sourceType: "script"`.
 - `babelOptions` is an object containing Babel configuration [options](https://babeljs.io/docs/en/options) that are passed to Babel's parser at runtime. For cases where users might not want to use a Babel configuration file or are running Babel through another tool (such as Webpack with `babel-loader`).
@@ -97,13 +116,13 @@ This configuration is useful for monorepo, when you are running ESLint on every 
 
 ```js
 module.exports = {
-  "parser": "@babel/eslint-parser",
-  "parserOptions": {
-    "babelOptions": {
-      "rootMode": "upward"
-    }
-  }
-}
+  parser: "@babel/eslint-parser",
+  parserOptions: {
+    babelOptions: {
+      rootMode: "upward",
+    },
+  },
+};
 ```
 
 ### Run
