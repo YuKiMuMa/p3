@@ -12,11 +12,11 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_d6b85b86 from 'nuxt_plugin_plugin_d6b85b86' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_webfontloader_054f4040 from 'nuxt_plugin_webfontloader_054f4040' // Source: .\\webfontloader.js (mode: 'client')
-import nuxt_plugin_pluginclient_b5b0671a from 'nuxt_plugin_pluginclient_b5b0671a' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_0ae13dfb from 'nuxt_plugin_pluginserver_0ae13dfb' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_axios_4a3ef9e0 from 'nuxt_plugin_axios_4a3ef9e0' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_1565f841 from 'nuxt_plugin_plugin_1565f841' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_webfontloader_cbf3b038 from 'nuxt_plugin_webfontloader_cbf3b038' // Source: .\\webfontloader.js (mode: 'client')
+import nuxt_plugin_pluginclient_0c9f5077 from 'nuxt_plugin_pluginclient_0c9f5077' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_7258c1ff from 'nuxt_plugin_pluginserver_7258c1ff' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_axios_48a705e4 from 'nuxt_plugin_axios_48a705e4' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_lazyload_69a37db4 from 'nuxt_plugin_lazyload_69a37db4' // Source: ..\\plugins\\lazyload.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -67,7 +67,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"p3","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"YuKiMuMa","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ficon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -181,24 +181,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_d6b85b86 === 'function') {
-    await nuxt_plugin_plugin_d6b85b86(app.context, inject)
+  if (typeof nuxt_plugin_plugin_1565f841 === 'function') {
+    await nuxt_plugin_plugin_1565f841(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_webfontloader_054f4040 === 'function') {
-    await nuxt_plugin_webfontloader_054f4040(app.context, inject)
+  if (process.client && typeof nuxt_plugin_webfontloader_cbf3b038 === 'function') {
+    await nuxt_plugin_webfontloader_cbf3b038(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_b5b0671a === 'function') {
-    await nuxt_plugin_pluginclient_b5b0671a(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_0c9f5077 === 'function') {
+    await nuxt_plugin_pluginclient_0c9f5077(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_0ae13dfb === 'function') {
-    await nuxt_plugin_pluginserver_0ae13dfb(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_7258c1ff === 'function') {
+    await nuxt_plugin_pluginserver_7258c1ff(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_4a3ef9e0 === 'function') {
-    await nuxt_plugin_axios_4a3ef9e0(app.context, inject)
+  if (typeof nuxt_plugin_axios_48a705e4 === 'function') {
+    await nuxt_plugin_axios_48a705e4(app.context, inject)
   }
 
   if (typeof nuxt_plugin_lazyload_69a37db4 === 'function') {

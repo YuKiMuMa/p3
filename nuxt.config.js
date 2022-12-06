@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'p3',
+    title: 'YuKiMuMa',
     htmlAttrs: {
       lang: 'en'
     },
@@ -11,7 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
     ]
   },
 
@@ -21,7 +21,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: "~plugins/lazyload.js" }
+    { src: "~plugins/lazyload.js" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

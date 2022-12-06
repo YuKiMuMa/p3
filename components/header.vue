@@ -13,6 +13,7 @@
       </div>
       <nav class="pc-nav">
          <ul>
+               <li><a href="/">HOME</a></li>
                <li><a href="/works">WORKS</a></li>
                <li><a href="/blogs">BLOG</a></li>
                <li><a href="/contact">CONTACT</a></li>
