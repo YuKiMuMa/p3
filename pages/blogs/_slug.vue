@@ -48,6 +48,9 @@ export default {
 </script>
 
 <style>
+p{
+  line-height:200%;
+}
 hr {
    border-width: 2px 0px 0px 0px; 
    border-style: solid; 
@@ -73,7 +76,7 @@ img{
   }
 }
 .bb{
-  padding: 100px;
+  padding: 50px 200px;
   display: flex;
   width:100%;
   background-color: rgb(255, 255, 255);
@@ -82,7 +85,7 @@ img{
   width:70%;
   flex-direction: column;
   align-items: center;
-  background-color: #ffff;
+  background-color: rgb(255, 255, 255);
 }
 .content{
   padding:2%;
@@ -108,7 +111,7 @@ img{
   text-decoration-line: none;
     color:black;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 850px){
   .bb{
     display: block;
     padding: 100px;
