@@ -13,7 +13,8 @@ export default {
       { hid: 'og:description', property: 'og:description', content: 'YuKiMuMa' },
       { hid: 'og:url', property: 'og:url', content: 'https://yukimuma.net/' },
       { hid: 'og:title', property: 'og:title', content: 'YuKiMuMa' },
-      { hid: 'og:image', property: 'og:image', content: 'https://yukimuma.net/image/yukimuma.jpg' }
+      { hid: 'og:image', property: 'og:image', content: 'https://yukimuma.net/image/yukimuma.jpg' },
+      { name: 'twitter:card', content: 'summarysummary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
