@@ -49,7 +49,6 @@ export default {
 
 <style>
 p{
-  line-height:200%;
 }
 hr {
    border-width: 2px 0px 0px 0px; 
