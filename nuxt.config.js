@@ -11,7 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:title', property: 'og:title', content: 'YuKiMuMa' },
-      { hid: 'og:image', property: 'og:image', content: '/image/yukimuma.jpg' }
+      { hid: 'og:image', property: 'og:image', content: 'https://yukimuma.net/image/yukimuma.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
