@@ -67,7 +67,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"YuKiMuMa","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"hid":"og:type","property":"og:type","content":"website"},{"hid":"og:title","property":"og:title","content":"YuKiMuMa"},{"hid":"og:image","property":"og:image","content":"\u002Fimage\u002Fyukimuma.jpg"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ficon.ico"}],"style":[],"script":[]},
+    head: {"title":"YuKiMuMa","htmlAttrs":{"lang":"en","prefix":"og: http:\u002F\u002Fogp.me\u002Fns#"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"hid":"og:type","property":"og:type","content":"website"},{"hid":"og:description","property":"og:description","content":"YuKiMuMa"},{"hid":"og:url","property":"og:url","content":"https:\u002F\u002Fyukimuma.net\u002F"},{"hid":"og:title","property":"og:title","content":"YuKiMuMa"},{"hid":"og:image","property":"og:image","content":"https:\u002F\u002Fyukimuma.net\u002Fimage\u002Fyukimuma.jpg"},{"name":"twitter:card","content":"summarysummary_large_image"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ficon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {
