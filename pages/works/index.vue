@@ -4,8 +4,10 @@
           <div v-for="w in works" :key="w.slug"  class="post">
             <nuxt-link :to="'/works/'+ w.slug">
               <img :src="w.img" :alt="w.title + ' サムネイル'" class="item__img">
-              <h2>{{w.title}}</h2>
-              <p class="lead">{{w.date}}</p>
+              <div class="hover-mask">
+                <h2>{{w.title}}</h2>
+                <p class="lead">{{w.date}}</p>
+              </div>
             </nuxt-link>
           </div>
         </section>
@@ -56,6 +58,21 @@ export default {
 #posts .post:hover img {
   transform:scale(1.1,1.1);
   transition:0.8s all;
+}
+.hover-mask {
+  background: rgba(0, 0, 0, .2); /* マスクの色(黒の50%) */
+  bottom: 0;
+  height: auto;
+  left: 0;
+  opacity: 0; /* 最初は透明(非表示) */
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .6s ease; /* ゆっくりopacityのみへ変化させる */
+  width: 100%;
+}
+.hover-mask:hover {
+  opacity: 1; /* hoverしたら透過しない(表示させる) */
 }
 #posts .post h2 {
   color:#fff;

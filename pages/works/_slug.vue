@@ -39,6 +39,9 @@ img{
     margin-left: auto;
     margin-right: auto 
 }
+a {
+color:rgb(120, 120, 120);
+}
 .bb{
   padding: 50px;
   display: flex;
@@ -75,14 +78,27 @@ h1{
   margin: 0 auto;
   max-width: 100%;
 }
-
-.gdrive{
+.video-wrap {
   padding-top:10%;
   width:90%;
-  height:540px;
   display: block;
   margin: 0 auto;
   max-width: 100%;
+}
+.gdrive{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gvideo{
+  position: relative;
+  width:100%; /* 横幅は100%で固定 */
+  height:0; /* 高さは0にしておく(padding-topで高さを指定するため) */
+  padding-top: 56.25%; /* 高さを指定(16:9) */  display:block;
+  width:100%; /* 横幅は100%で固定 */
 }
 
 
