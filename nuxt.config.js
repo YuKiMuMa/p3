@@ -14,8 +14,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
     ]
   },
-  ssr: true,
-  target: 'static',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
