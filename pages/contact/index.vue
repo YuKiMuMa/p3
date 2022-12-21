@@ -1,11 +1,16 @@
 <template>
   <section class="contact-container">
     <template v-if="!finished">
-      <form name="contact" method="POST" data-netlify="true" @submit.prevent>
+      <validation-observer ref="observer" v-slot="{ invalid, validated }" tag="form" class="p-contact__form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit" :class="sendingClass">
+      <!--<form name="contact" method="POST" data-netlify="true" @submit.prevent> -->
         <p>
           <label>
             お名前:
-            <input v-model="form.name" type="text" name="name" />
+            <!--<input v-model="form.name" type="text" name="name" /> --->
+            <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
+              <input type="text" id="username" name="username" v-model="form.name" autocomplete="name">
+              <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
+            </validation-provider>
           </label>
         </p>
         <p>
@@ -20,10 +25,10 @@
             <textarea id="form-content" v-model="form.content" name="content" />
           </label>
         </p>
-        <p>
-          <button @click="handleSubmit" v-text="'送信'" />
-        </p>
-      </form>
+        <div class="p-contact__submit">
+          <button @click="handleSubmit" type="submit" :disabled="invalid || !validated">送信</button>
+        </div>
+      </validation-observer>
     </template>
     <template v-else>
       <p v-text="'お問い合わせ頂きありがとうございました。'" />
