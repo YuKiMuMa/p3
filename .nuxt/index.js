@@ -17,8 +17,8 @@ import nuxt_plugin_webfontloader_4b083127 from 'nuxt_plugin_webfontloader_4b0831
 import nuxt_plugin_pluginclient_5d1d328c from 'nuxt_plugin_pluginclient_5d1d328c' // Source: .\\content\\plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_372ad842 from 'nuxt_plugin_pluginserver_372ad842' // Source: .\\content\\plugin.server.js (mode: 'server')
 import nuxt_plugin_axios_3b07fbb2 from 'nuxt_plugin_axios_3b07fbb2' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_veevalidate_6e5ad03a from 'nuxt_plugin_veevalidate_6e5ad03a' // Source: ..\\plugins\\vee-validate (mode: 'all')
 import nuxt_plugin_lazyload_69a37db4 from 'nuxt_plugin_lazyload_69a37db4' // Source: ..\\plugins\\lazyload.js (mode: 'all')
-import nuxt_plugin_veevalidate_3f7cf8b3 from 'nuxt_plugin_veevalidate_3f7cf8b3' // Source: ..\\plugins\\vee-validate.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -202,12 +202,12 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_axios_3b07fbb2(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_lazyload_69a37db4 === 'function') {
-    await nuxt_plugin_lazyload_69a37db4(app.context, inject)
+  if (typeof nuxt_plugin_veevalidate_6e5ad03a === 'function') {
+    await nuxt_plugin_veevalidate_6e5ad03a(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_veevalidate_3f7cf8b3 === 'function') {
-    await nuxt_plugin_veevalidate_3f7cf8b3(app.context, inject)
+  if (typeof nuxt_plugin_lazyload_69a37db4 === 'function') {
+    await nuxt_plugin_lazyload_69a37db4(app.context, inject)
   }
 
   // Lock enablePreview in context
