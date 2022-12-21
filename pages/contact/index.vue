@@ -3,7 +3,7 @@
       <div class="title">
         <h1>CONTACT</h1>
       </div>
-
+      
       <div class="p-contact__item">
         <label for="username">お名前</label>
         <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
@@ -11,45 +11,11 @@
           <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
         </validation-provider>
       </div>
-      <!-- /.p-contact__item -->
-
-      <div class="p-contact__item">
-        <label for="katakana">フリガナ</label>
-        <validation-provider v-slot="{ errors }" rules="required|katakana" name="フリガナ">
-          <input type="text" id="katakana" name="katakana" v-model="katakana">
-          <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
-        </validation-provider>
-      </div>
-      <!-- /.p-contact__item -->
-
-      <div class="p-contact__item">
-        <label for="useremail">メールアドレス</label>
-        <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="メールアドレス">
-          <input type="text" id="useremail" name="useremail" v-model="useremail" autocomplete="email">
-          <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
-        </validation-provider>
-      </div>
-      <!-- /.p-contact__item -->
-
-      <div class="p-contact__item">
-        <label for="message">お問い合わせ内容</label>
-        <validation-provider v-slot="{ errors }" rules="required|max:1000" name="お問い合わせ内容">
-          <textarea id="message" name="message" v-model="message"></textarea>
-          <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
-        </validation-provider>
-      </div>
-      <!-- /.p-contact__item -->
-
-      <div class="p-contact__item" v-show="false">
-        <label for="message">スパムでない場合は空欄</label>
-        <input type="text" name="bot-field" v-model="botField"/>
-      </div>
-      <!-- /.p-contact__item -->
 
       <div class="p-contact__submit">
-        <button type="submit">送信</button>
+        <button type="submit" :disabled="invalid || !validated">送信</button>
       </div>
-      <!-- /.p-contact__submit -->
+
     </div>
 </template>
 
