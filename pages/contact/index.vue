@@ -3,7 +3,8 @@
       <div class="title">
         <h1>CONTACT</h1>
       </div>
-      
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
       <div class="p-contact__item">
         <label for="username">お名前</label>
         <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
@@ -13,9 +14,9 @@
       </div>
 
       <div class="p-contact__submit">
-        <button type="submit" :disabled="invalid || !validated">送信</button>
+        <button type="submit">送信</button>
       </div>
-
+      </form>
     </div>
 </template>
 
