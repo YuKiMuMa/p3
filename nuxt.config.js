@@ -17,8 +17,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
-  ssr:true,
-  target:"server",
+  ssr:false,
 
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
