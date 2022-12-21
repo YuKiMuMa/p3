@@ -5,7 +5,6 @@
       </div>
       <validation-observer ref="observer" v-slot="{ invalid, validated }" tag="form" class="p-contact__form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit" :class="sendingClass">
 
-      <client-only placeholder="Loading…">
       <div class="p-contact__item">
         <label for="username">お名前</label>
         <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
@@ -15,8 +14,6 @@
       </div>
       <!-- /.p-contact__item -->
 
-      </client-only>
-      <client-only placeholder="Loading…">
       <div class="p-contact__item">
         <label for="katakana">フリガナ</label>
         <validation-provider v-slot="{ errors }" rules="required|katakana" name="フリガナ">
@@ -26,8 +23,6 @@
       </div>
       <!-- /.p-contact__item -->
 
-      </client-only>
-      <client-only placeholder="Loading…">
       <div class="p-contact__item">
         <label for="useremail">メールアドレス</label>
         <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="メールアドレス">
@@ -37,8 +32,6 @@
       </div>
       <!-- /.p-contact__item -->
 
-      </client-only>
-      <client-only placeholder="Loading…">
       <div class="p-contact__item">
         <label for="message">お問い合わせ内容</label>
         <validation-provider v-slot="{ errors }" rules="required|max:1000" name="お問い合わせ内容">
@@ -48,15 +41,12 @@
       </div>
       <!-- /.p-contact__item -->
 
-      </client-only>
-      <client-only placeholder="Loading…">
       <div class="p-contact__item" v-show="false">
         <label for="message">スパムでない場合は空欄</label>
         <input type="text" name="bot-field" v-model="botField"/>
       </div>
       <!-- /.p-contact__item -->
 
-      </client-only>
       <div class="p-contact__submit">
         <button type="submit" :disabled="invalid || !validated">送信</button>
       </div>
