@@ -47,7 +47,7 @@
       <!-- /.p-contact__item -->
 
       <div class="p-contact__submit">
-        <button type="submit" :disabled="invalid || !validated">送信</button>
+        <button type="submit">送信</button>
       </div>
       <!-- /.p-contact__submit -->
     </div>
