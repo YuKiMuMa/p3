@@ -30,16 +30,9 @@
 </template>
 
 <script>
-import { ValidationProvider, extend } from "vee-validate";
-import { required } from 'vee-validate/dist/rules';
 
-// mountedでも可
-extend('required', required)
 export default {
-  components: {
-    ValidationProvider,
-  },
-  
+
 }
 </script>
 
