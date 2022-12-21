@@ -4,6 +4,8 @@
         <h1>CONTACT3</h1>
       </div>
       <validation-observer ref="observer" v-slot="{ invalid, validated }" tag="form" class="p-contact__form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit" :class="sendingClass">
+      <client-only placeholder="Loading…">
+
       <div class="p-contact__item">
         <label for="username">お名前</label>
         <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
@@ -13,7 +15,6 @@
       </div>
       <!-- /.p-contact__item -->
 
-      <client-only placeholder="Loading…">
       <div class="p-contact__item">
         <label for="katakana">フリガナ</label>
         <validation-provider v-slot="{ errors }" rules="required|katakana" name="フリガナ">
