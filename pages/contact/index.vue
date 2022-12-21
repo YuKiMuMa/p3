@@ -47,32 +47,69 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      name: "",
-      email: "",
-      company: "",
-      message: "",
-      botfield: "",
-    }
-  },
-  methods: {
-    async submit() {
-      const params = new FormData()
-      //以下、ダミーフォームの各フォーム要素のnameと合わせる
-      params.append('form-name', 'contact')
-      params.append('name', this.name)
-      params.append('useremail', this.email)
-      params.append('message', this.message)
-      params.append('bot-field', this.botfield)
 
-      const response = await this.$axios.$post(window.location.origin, params)
-      //実際はresponseを使って画面側にフィードバックさせるが、ここでは仮にconsoleに出力
-      console.log(response)
+ export default {
+    data() {
+      return {
+        username        : '',
+        useremail       : '',
+        message         : '',
+        botField        : '',
+        isSubmit        : false,
+        isSending       : false,
+        isError         : false,
+        completeMessage : '',
+      }
     },
-  },
-}
+    computed: {
+      sendingClass(){
+        return {
+          'is-sending'  : this.isSending,
+          'is-error'    : this.isError,
+          'is-complete' : this.isSubmit
+        };
+      }
+    },
+    methods: {
+      onSubmit() {
+        if(this.isSending){
+          return;
+        }
+        this.isSending = true;
+        this.completeMessage = '送信処理中…';
+        const params = new URLSearchParams();
+        params.append('form-name', 'contact');
+        params.append('username', this.username);
+        params.append('useremail', this.useremail);
+        params.append('message', this.message);
+        if(this.botField){
+          params.append('bot-field', this.botField);
+        }
+        this.$axios
+        .$post('/', params)
+        .then(() => {
+          this.completeMessage = 'お問い合わせを送信しました！';
+          this.resetForm();
+          this.isSubmit  = true;
+        })
+        .catch(err => {
+          this.completeMessage = 'お問い合わせの送信が失敗しました';
+          this.isError   = true;
+        })
+        .finally(() => {
+          this.isSending = false;
+        });
+      },
+
+      resetForm() {
+        this.username        = '';
+        this.useremail       = '';
+        this.message         = '';
+        this.isError         = false;
+        this.$refs.observer.reset();
+      }
+    }
+ }
 </script>
 
 <style>
