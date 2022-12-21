@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="title">
-        <h1>CONTACT</h1>
+        <h1>CONTACT2</h1>
       </div>
       <validation-observer ref="observer" v-slot="{ invalid, validated }" tag="form" class="p-contact__form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit" :class="sendingClass">
       <div class="p-contact__item">
