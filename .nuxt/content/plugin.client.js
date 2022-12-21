@@ -1,29 +1,49 @@
 import Vue from 'vue'
 import NuxtContent from './nuxt-content'
-import QueryBuilder from './query-builder'
+const loadContent = () =>
+  import('./plugin.client.lazy' /* webpackChunkName: "content/plugin.js" */)
 
 Vue.component(NuxtContent.name, NuxtContent)
 
 export default (ctx, inject) => {
-  const $content = function () {
-    let options
-    const paths = []
-    Array.from(arguments).forEach((argument) => {
-      if (typeof argument === 'string') {
-        paths.push(argument)
-      } else if (typeof argument === 'object') {
-        options = argument
+  let $$content = null
+  const { dbHash } = ctx.$config ? ctx.$config.content : ctx.nuxtState.content
+  const $content = (...contentArgs) => {
+    if ($$content) {
+      return $$content(...contentArgs)
+    }
+    const keys = [
+      'only',
+      'without',
+      'sortBy',
+      'limit',
+      'skip',
+      'where',
+      'search',
+      'surround'
+    ]
+    const mock = {}
+    const toCall = []
+    for (const key of keys) {
+      mock[key] = (...args) => {
+        toCall.push({ key, args })
+        return mock
       }
-    })
-
-    let path = paths.join('/').replace(/\/+/g, '/')
-    if (!path.startsWith('/')) {
-      path = `/${path}`
+    }
+    mock.fetch = async () => {
+      const database = await fetch(
+        `/_nuxt/content/db-${dbHash}.json`
+      ).then(res => res.json())
+      $$content = (await loadContent()).default(database)
+      let query = $$content(...contentArgs)
+      toCall.forEach(({ key, args }) => {
+        query = query[key](...args)
+      })
+      return query.fetch()
     }
 
-    return new QueryBuilder(`/_content${path}`, options)
+    return mock
   }
-
   inject('content', $content)
   ctx.$content = $content
 }
