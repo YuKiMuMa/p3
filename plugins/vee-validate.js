@@ -10,7 +10,7 @@ import ja from 'vee-validate/dist/locale/ja.json'
 import { required, email, max } from 'vee-validate/dist/rules'
 
 //日本語
-localize('ja', ja)
+//localize('ja', ja)
 
 //必須
 extend('required', required)
