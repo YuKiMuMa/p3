@@ -1,7 +1,7 @@
 <template>
     <div class="container">
       <div class="title">
-        <h1>CONTACT</h1>
+        <h1>CONTACT2</h1>
       </div>
       <div>
         <h2>h2</h2>
