@@ -3,6 +3,9 @@
       <div class="title">
         <h1>CONTACT</h1>
       </div>
+      <div>
+        <h2>h2</h2>
+      </div>
       <form name="contact" method="POST" data-netlify="true">
       <p>
         <label>Your Name: <input type="text" name="name" /></label>
