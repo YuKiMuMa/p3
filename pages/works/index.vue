@@ -33,7 +33,7 @@ export default {
   padding-left: 10%;
   padding-right: 10%;
   font-size: 0;
-  animation: 1s appear;
+  animation: 3s appear;
 }
 #posts .post {
   position: relative;
