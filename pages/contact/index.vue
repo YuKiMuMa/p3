@@ -5,11 +5,11 @@
       <h1>CONTACT</h1>
     </div>
     <div class="c_form">
-      <validation-observer ref="observer" v-slot="{ invalid, validated }" tag="form" class="p-contact__form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit" :class="sendingClass">
+      <validation-observer ref="observer" v-slot="{ invalid, validated }" tag="form" class="p-contact__form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent :class="sendingClass">
       <!--<form name="contact" method="POST" data-netlify="true" @submit.prevent> -->
         <div class="formset">
-        <label for="username">お名前</label>
-        <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
+        <label for="username">*Name</label>
+        <validation-provider v-slot="{ errors }" rules="required|max:100" name="Name">
           <input type="text" id="username" name="username" v-model="username" autocomplete="name">
           <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
         </validation-provider>
@@ -17,8 +17,8 @@
       <!-- /.p-contact__item -->
 
       <div class="formset">
-        <label for="useremail">メールアドレス</label>
-        <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="メールアドレス">
+        <label for="useremail">*Email Address</label>
+        <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="Email Address">
           <input type="text" id="useremail" name="useremail" v-model="useremail" autocomplete="email">
           <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
         </validation-provider>
@@ -26,8 +26,8 @@
       <!-- /.p-contact__item -->
 
       <div class="formset">
-        <label for="message">お問い合わせ内容</label>
-        <validation-provider v-slot="{ errors }" rules="required|max:1000" name="お問い合わせ内容">
+        <label for="message">*Message</label>
+        <validation-provider v-slot="{ errors }" rules="required|max:1000" name="Message">
           <textarea id="message" name="message" v-model="message"></textarea>
           <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
         </validation-provider>
@@ -35,13 +35,13 @@
       <!-- /.p-contact__item -->
 
       <div class="formset" v-show="false">
-        <label for="message">スパムでない場合は空欄</label>
+        <label for="message">aiaio</label>
         <input type="text" name="bot-field" v-model="botField"/>
       </div>
       <!-- /.p-contact__item -->
-
-      <div class="formset">
-        <button @click="handleSubmit" type="submit" :disabled="invalid || !validated">送信</button>
+      <p class="completeMessage" :key="completeMessage.id">{{completeMessage}}</p>
+      <div class="formbu">
+        <button @click="handleSubmit" type="submit" :disabled="invalid || !validated">Submit</button>
       </div>
       </validation-observer>
     </div>
@@ -81,7 +81,7 @@ export default {
           return;
         }
         this.isSending = true;
-        this.completeMessage = '送信処理中…';
+        this.completeMessage = 'busy…';
         const params = new URLSearchParams();
         params.append('form-name', 'contact');
         params.append('name', this.username);
@@ -93,12 +93,12 @@ export default {
         axios
         .post('/', params,axiosConfig)
         .then(() => {
-          this.completeMessage = 'お問い合わせを送信しました！';
+          this.completeMessage = 'Thank you for submitting!';
           this.resetForm();
           this.isSubmit  = true;
         })
         .catch(err => {
-          this.completeMessage = 'お問い合わせの送信が失敗しました';
+          this.completeMessage = 'Submission faild';
           this.isError   = true;
         })
         .finally(() => {
@@ -128,7 +128,7 @@ export default {
 }
 .con{
   margin: auto;
-  width: 80%;
+  width: 50%;
   display: flex;
   flex-flow:column;
 }
@@ -197,5 +197,8 @@ button:hover:disabled{
 button:hover{
   color: rgb(255, 255, 255);
   background-color: black;
+}
+.formbu{
+  margin: 10px auto;
 }
 </style>

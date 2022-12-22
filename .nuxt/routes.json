@@ -21,6 +21,13 @@
     "_name": "_f671b88e"
   },
   {
+    "name": "contact-test",
+    "path": "/contact/test",
+    "component": "G:\\\\site\\\\contact\\\\p3\\\\pages\\\\contact\\\\test.vue",
+    "chunkName": "pages/contact/test",
+    "_name": "_5b05fa59"
+  },
+  {
     "name": "blogs-slug",
     "path": "/blogs/:slug",
     "component": "G:\\\\site\\\\contact\\\\p3\\\\pages\\\\blogs\\\\_slug.vue",

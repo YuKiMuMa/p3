@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _d2cf8a6c = () => interopDefault(import('..\\pages\\blogs\\index.vue' /* webpackChunkName: "pages/blogs/index" */))
 const _1e8f0c1b = () => interopDefault(import('..\\pages\\contact\\index.vue' /* webpackChunkName: "pages/contact/index" */))
 const _f671b88e = () => interopDefault(import('..\\pages\\works\\index.vue' /* webpackChunkName: "pages/works/index" */))
+const _5b05fa59 = () => interopDefault(import('..\\pages\\contact\\test.vue' /* webpackChunkName: "pages/contact/test" */))
 const _d63cccfc = () => interopDefault(import('..\\pages\\blogs\\_slug.vue' /* webpackChunkName: "pages/blogs/_slug" */))
 const _f9defb1e = () => interopDefault(import('..\\pages\\works\\_slug.vue' /* webpackChunkName: "pages/works/_slug" */))
 const _d4ca940e = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
@@ -34,6 +35,10 @@ export const routerOptions = {
     path: "/works",
     component: _f671b88e,
     name: "works"
+  }, {
+    path: "/contact/test",
+    component: _5b05fa59,
+    name: "contact-test"
   }, {
     path: "/blogs/:slug",
     component: _d63cccfc,
