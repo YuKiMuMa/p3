@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <div class="con">
-    <template v-if="!finished">
     <div class="title">
       <h1>CONTACT</h1>
     </div>
@@ -42,15 +41,10 @@
       <!-- /.p-contact__item -->
 
       <div class="formset">
-        <button type="submit" :disabled="invalid || !validated">送信</button>
+        <button @click="handleSubmit" type="submit" :disabled="invalid || !validated">送信</button>
       </div>
       </validation-observer>
     </div>
-    </template>
-    <template v-else>
-      <p v-text="'Thank you for submitting'" />
-      <a><nuxt-link to="/" v-text="'TOP'" /></a>
-    </template>
     </div>
   </div>
 </template>
@@ -60,7 +54,6 @@ export default {
     data() {
       return {
         username        : '',
-        katakana        : '',
         useremail       : '',
         message         : '',
         botField        : '',
@@ -80,7 +73,10 @@ export default {
       }
     },
     methods: {
-      onSubmit() {
+      handleSubmit() {
+        const axiosConfig = {
+          header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        }
         if(this.isSending){
           return;
         }
@@ -94,8 +90,8 @@ export default {
         if(this.botField){
           params.append('bot-field', this.botField);
         }
-        this.$axios
-        .$post('/', params)
+        axios
+        .post('/', params,axiosConfig)
         .then(() => {
           this.completeMessage = 'お問い合わせを送信しました！';
           this.resetForm();
