@@ -88,10 +88,9 @@ export default {
         this.completeMessage = '送信処理中…';
         const params = new URLSearchParams();
         params.append('form-name', 'contact');
-        params.append('username', this.username);
-        params.append('katakana', this.katakana);
-        params.append('useremail', this.useremail);
-        params.append('message', this.message);
+        params.append('name', this.username);
+        params.append('email', this.useremail);
+        params.append('content', this.message);
         if(this.botField){
           params.append('bot-field', this.botField);
         }
