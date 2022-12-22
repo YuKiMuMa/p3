@@ -14,11 +14,9 @@ Adobe Photoshop
 
 Image-Line FL Studio
 
-<div class="video-wrap">
-<div class="gvideo">
-<iframe class="gdrive" src="https://drive.google.com/file/d/1N_-KpSrn7Y3-Cq4xOdU57_HAct8s7EUR/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</div>
-</div>
+<hr>
+
+<div class="youtube">
+<iframe id=content width="100%" height="100%" src="https://www.youtube.com/embed/--n0LRfN19k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ![alt text](http://drive.google.com/uc?export=view&id=1ibQFeRHlHTSXNAPlKCWyjYCSTfTR6Lyb)

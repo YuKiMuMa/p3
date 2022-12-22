@@ -48,8 +48,6 @@ export default {
 </script>
 
 <style>
-p{
-}
 hr {
    border-width: 2px 0px 0px 0px; 
    border-style: solid; 

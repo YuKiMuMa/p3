@@ -12,12 +12,9 @@ Adobe AfterEffects
 
 Image-Line FL Studio
 
-<div class="video-wrap">
-<div class="gvideo">
-<iframe class="gdrive" src="https://drive.google.com/file/d/1tjb9tzB3XU297Km8AuQXj5h-O2ogNvur/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</div>
-</div>
+<div class="youtube">
+<iframe id=content width="100%" height="100%" src="https://www.youtube.com/embed/nq88Fgf7gk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
 
 ![alt text](http://drive.google.com/uc?export=view&id=1JENx7wUhROI9F51x6T1WDlfHuwyxD-9Z)
 

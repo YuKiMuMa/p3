@@ -32,7 +32,6 @@ export default {
 #posts {
   padding-left: 10%;
   padding-right: 10%;
-  text-align: center;
   font-size: 0;
   animation: 1s appear;
 }
@@ -40,13 +39,14 @@ export default {
   position: relative;
   width: 100%;
   height: 200px;
-  margin: 0;
-  border: 3px solid #fff;
+  margin: 0px 0px;
+  border: 2px solid #fff;
   display: inline-block;
   background-size: cover;
   background-position: center center;
   transition: all 300ms ease-out;
   overflow:hidden;
+  vertical-align: middle;
 }
 #posts .post img {
   padding:0%;

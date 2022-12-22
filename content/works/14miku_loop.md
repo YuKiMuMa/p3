@@ -20,12 +20,8 @@ Sour式初音ミクVer.1.00をお借りしました。
 
 https://bowlroll.net/file/146103
 
-<div class="video-wrap">
-<div class="gvideo">
-<iframe class="gdrive" src="https://drive.google.com/file/d/1XZuSPrj7p1U8CDcdnz76IvBUgRNUDiuX/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-</div>
-</div>
+<div class="youtube">
+<iframe id=content width="100%" height="100%" src="https://www.youtube.com/embed/5QVnUElxQ0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ![alt text](http://drive.google.com/uc?export=view&id=16EJ-hhLZLzCDP5rbgsihO_66umxzJ8rC)
 

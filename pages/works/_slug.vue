@@ -25,20 +25,24 @@ export default {
 </script>
 
 <style>
+h1{
+  margin: 20px auto;
+}
 hr {
-   border-width: 2px 0px 0px 0px; 
+   border-width: 1px 0px 0px 0px; 
    border-style: solid; 
    border-color: rgb(0, 0, 0);  
    height: 1px;    
-   padding-bottom: 30px; 
+    margin: 30px auto;
 }    
 img{
     display: flex;
-    width:90%;
+    width:80%;
     padding-top:10%;
     margin-left: auto;
     margin-right: auto 
 }
+
 a {
 color:rgb(120, 120, 120);
 }
@@ -71,13 +75,37 @@ h1{
 }
 
 .youtube{
-  padding-top:10%;
-  width:90%;
-  height:540px;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
+    position: relative;
+    display: flex;
+    width:80%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto 
+
 }
+.scloud{
+    position: relative;
+    display: flex;
+    width:80%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto 
+
+}
+.youtube:before {
+    content:"";
+    display: block;
+    padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .video-wrap {
   padding-top:10%;
   width:90%;
@@ -100,6 +128,7 @@ h1{
   padding-top: 56.25%; /* 高さを指定(16:9) */  display:block;
   width:100%; /* 横幅は100%で固定 */
 }
+
 
 
 </style>
