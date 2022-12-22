@@ -1,96 +1,126 @@
 <template>
   <div class="container">
     <div class="con">
+    <template v-if="!finished">
     <div class="title">
       <h1>CONTACT</h1>
     </div>
     <div class="c_form">
-    <template v-if="!finished">
       <validation-observer ref="observer" v-slot="{ invalid, validated }" tag="form" class="p-contact__form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit" :class="sendingClass">
       <!--<form name="contact" method="POST" data-netlify="true" @submit.prevent> -->
         <div class="formset">
-          <label>
-            *Name
-          </label>
-            <!--<input v-model="form.name" type="text" name="name" /> --->
-            <validation-provider v-slot="{ errors }" rules="required|max:100" name="Name">
-              <input type="text" id="username" name="username" v-model="form.name" autocomplete="name">
-              <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
-            </validation-provider>
-        </div>
+        <label for="username">お名前</label>
+        <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
+          <input type="text" id="username" name="username" v-model="username" autocomplete="name">
+          <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
+        </validation-provider>
+      </div>
+      <!-- /.p-contact__item -->
 
-        <div class="formset">
-          <label>
-            *Email Address
-          </label>
-            <!--<input v-model="form.name" type="text" name="name" /> --->
-            <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="Email Address">
-              <input type="email" id="useremail" name="useremail" v-model="form.email" autocomplete="email">
-              <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
-            </validation-provider>
-        </div>
+      <div class="formset">
+        <label for="useremail">メールアドレス</label>
+        <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="メールアドレス">
+          <input type="text" id="useremail" name="useremail" v-model="useremail" autocomplete="email">
+          <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
+        </validation-provider>
+      </div>
+      <!-- /.p-contact__item -->
 
-        <div class="formset">
-          <label>*Message</label>
-          <validation-provider v-slot="{ errors }" rules="required|max:1000" name="Message">
-            <textarea id="form-content" name="content" v-model="message" style="height:200px;"></textarea>
-            <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
-          </validation-provider>
-        </div>
+      <div class="formset">
+        <label for="message">お問い合わせ内容</label>
+        <validation-provider v-slot="{ errors }" rules="required|max:1000" name="お問い合わせ内容">
+          <textarea id="message" name="message" v-model="message"></textarea>
+          <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
+        </validation-provider>
+      </div>
+      <!-- /.p-contact__item -->
 
-        <div class="p-contact__submit">
-          <button @click="handleSubmit" type="submit" :disabled="invalid || !validated">Submit</button>
-        </div>
+      <div class="formset" v-show="false">
+        <label for="message">スパムでない場合は空欄</label>
+        <input type="text" name="bot-field" v-model="botField"/>
+      </div>
+      <!-- /.p-contact__item -->
+
+      <div class="formset">
+        <button type="submit" :disabled="invalid || !validated">送信</button>
+      </div>
       </validation-observer>
+    </div>
     </template>
     <template v-else>
       <p v-text="'Thank you for submitting'" />
-      <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
+      <a><nuxt-link to="/" v-text="'TOP'" /></a>
     </template>
-    </div>
     </div>
   </div>
 </template>
 <script>
 import axios from 'axios'
 export default {
-  data() {
-    return {
-      form: {
-        name: '',
-        email: '',
-        content: ''
-      },
-      finished: false
-    }
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
-    },
-    handleSubmit() {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    data() {
+      return {
+        username        : '',
+        katakana        : '',
+        useremail       : '',
+        message         : '',
+        botField        : '',
+        isSubmit        : false,
+        isSending       : false,
+        isError         : false,
+        completeMessage : '',
       }
-      axios
-        .post(
-          '/',
-          this.encode({
-            'form-name': 'contact',
-            ...this.form
-          }),
-          axiosConfig
-        )
+    },
+    computed: {
+      sendingClass(){
+        return {
+          'is-sending'  : this.isSending,
+          'is-error'    : this.isError,
+          'is-complete' : this.isSubmit
+        };
+      }
+    },
+    methods: {
+      onSubmit() {
+        if(this.isSending){
+          return;
+        }
+        this.isSending = true;
+        this.completeMessage = '送信処理中…';
+        const params = new URLSearchParams();
+        params.append('form-name', 'contact');
+        params.append('username', this.username);
+        params.append('katakana', this.katakana);
+        params.append('useremail', this.useremail);
+        params.append('message', this.message);
+        if(this.botField){
+          params.append('bot-field', this.botField);
+        }
+        this.$axios
+        .$post('/', params)
         .then(() => {
-          this.finished = true
+          this.completeMessage = 'お問い合わせを送信しました！';
+          this.resetForm();
+          this.isSubmit  = true;
         })
+        .catch(err => {
+          this.completeMessage = 'お問い合わせの送信が失敗しました';
+          this.isError   = true;
+        })
+        .finally(() => {
+          this.isSending = false;
+        });
+      },
+
+      resetForm() {
+        this.username        = '';
+        this.katakana        = '';
+        this.useremail       = '';
+        this.message         = '';
+        this.isError         = false;
+        this.$refs.observer.reset();
+      }
     }
   }
-}
 </script>
 <style>
 .container {
@@ -139,6 +169,7 @@ input{
 }
 textarea{
   width: 100%;
+  height: 300px;
 }
 label{
   font-weight: bold;
@@ -165,6 +196,8 @@ button{
 }
 button:hover:disabled{
   color: rgb(98, 98, 98,0.3);
+  background-color: rgb(0, 0, 0,0.1);
+
 }
 button:hover{
   color: rgb(255, 255, 255);
