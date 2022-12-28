@@ -55,9 +55,10 @@ hr {
    height: 1px;    
    padding-bottom: 30px; 
 }    
-img{
-  width:100%;
+.content img{
+  max-width: 100%;
   animation: fadeIn 0.7s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  padding: 20px;
 }
 .youtube{
   display: block;
@@ -122,5 +123,15 @@ img{
     display: none;
   }
 }
+h1{
+  padding-top: 50px;
+}
+h2{
+  padding-top: 20px;
+}
+h3{
+  padding-top: 10px;
+}
+
 
 </style>
