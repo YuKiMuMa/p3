@@ -10,6 +10,9 @@
           <nuxt-content :document="blogs" />
         </article>
       </div>
+      <hr>
+      <p>↓シェアしてね↓</p>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div class="side">
       <div class="sin">
@@ -19,7 +22,7 @@
             <li
               v-for="link of blogs.toc"
               :key="link.id"
-              :class="{ 'toc1': link.depth === 1,'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
+              :class="{'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
             >
               <NuxtLink :to="`#${link.id}`" class="toclnk">{{ link.text }}</NuxtLink>
             </li>
@@ -34,6 +37,18 @@
 
 <script>
 export default {
+  head(){
+    return{
+      title:this.blogs.title,
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: '' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:image', property: 'og:image', content: this.blogs.img }
+      ],
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()

@@ -1,21 +1,11 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'YuKiMuMa',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
       prefix: 'og: http://ogp.me/ns#'
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:description', property: 'og:description', content: 'YuKiMuMa' },
-      { hid: 'og:url', property: 'og:url', content: 'https://yukimuma.net/' },
-      { hid: 'og:title', property: 'og:title', content: 'YuKiMuMa' },
-      { hid: 'og:image', property: 'og:image', content: 'https://yukimuma.net/image/yukimuma.jpg' }
-    ],
+
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
     ]

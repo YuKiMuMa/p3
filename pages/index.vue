@@ -96,6 +96,21 @@
 <script>
 export default {
   layout: 'default',
+  head(){
+    return{
+      title:'YuKiMuMa',
+      meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:description', property: 'og:description', content: 'YuKiMuMa' },
+      { hid: 'og:url', property: 'og:url', content: 'https://yukimuma.net/' },
+      { hid: 'og:title', property: 'og:title', content: 'YuKiMuMa' },
+      { hid: 'og:image', property: 'og:image', content: 'https://yukimuma.net/image/yukimuma.jpg' }
+    ],
+    }
+  },
 }
 </script>
 
