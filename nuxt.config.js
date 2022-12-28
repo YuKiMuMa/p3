@@ -14,7 +14,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
-  ssr:true,
+  ssr:false,
   generate: {
     fallback: true
   },
