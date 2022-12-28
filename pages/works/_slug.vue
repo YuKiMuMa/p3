@@ -28,9 +28,9 @@ export default {
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { hid: 'description', name: 'description', content: '' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:description', property: 'og:description', content: 'YuKiMuMa' },
+        { hid: 'og:description', property: 'og:description', content: 'YuKiMuMa works' },
         { hid: 'og:url', property: 'og:url', content: 'https://yukimuma.net/' },
-        { hid: 'og:title', property: 'og:title', content: 'YuKiMuMa' },
+        { hid: 'og:title', property: 'og:title', content: this.works.title },
         { hid: 'og:image', property: 'og:image', content: "https://yukimuma.net"+this.works.img },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:creator', content: 'YuKiMuMa' }
