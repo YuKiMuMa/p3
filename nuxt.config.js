@@ -15,6 +15,15 @@ export default {
   css: [
   ],
   ssr:false,
+  generate: {
+    async routes () {
+      const articles = await fetch('articles') // APIでデータを取るとする
+      return [
+        ...articles.map(article => article.path),
+      ]
+    },
+    fallback: true
+  },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: "~plugins/lazyload.js" },
