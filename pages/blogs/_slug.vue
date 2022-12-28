@@ -19,7 +19,7 @@
             <li
               v-for="link of blogs.toc"
               :key="link.id"
-              :class="{ 'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
+              :class="{ 'toc1': link.depth === 1,'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
             >
               <NuxtLink :to="`#${link.id}`" class="toclnk">{{ link.text }}</NuxtLink>
             </li>
@@ -123,13 +123,13 @@ hr {
     display: none;
   }
 }
-h1{
+h2{
   padding-top: 50px;
 }
-h2{
+h3{
   padding-top: 20px;
 }
-h3{
+h4{
   padding-top: 10px;
 }
 
