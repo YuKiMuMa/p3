@@ -39,13 +39,13 @@
 export default {
   head(){
     return{
-      title:this.blogs.title,
+      title:"YuKiMuMa Blogs : "+this.blogs.title,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { hid: 'description', name: 'description', content: '' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
-        { hid: 'og:image', property: 'og:image', content: this.blogs.img }
+        { hid: 'og:image', property: 'og:image', content: "https://yukimuma.net"+this.blogs.img }
       ],
     }
   },

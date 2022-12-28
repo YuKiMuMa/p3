@@ -16,7 +16,18 @@
 
 <script>
 export default {
-  
+  head(){
+    return{
+      title:"YuKiMuMa Works : "+this.works.title,
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: '' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:image', property: 'og:image', content: "https://yukimuma.net"+this.works.img }
+      ],
+    }
+  },
  async asyncData ({ $content, params }) {
    const works = await $content('works', params.slug || 'index').fetch()
    return { works }
