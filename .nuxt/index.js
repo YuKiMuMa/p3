@@ -18,7 +18,7 @@ import nuxt_plugin_pluginclient_427b4997 from 'nuxt_plugin_pluginclient_427b4997
 import nuxt_plugin_pluginserver_af9689c2 from 'nuxt_plugin_pluginserver_af9689c2' // Source: .\\content\\plugin.server.js (mode: 'server')
 import nuxt_plugin_axios_3ad93f04 from 'nuxt_plugin_axios_3ad93f04' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_lazyload_69a37db4 from 'nuxt_plugin_lazyload_69a37db4' // Source: ..\\plugins\\lazyload.js (mode: 'all')
-import nuxt_plugin_veeValidate_46310b42 from 'nuxt_plugin_veeValidate_46310b42' // Source: ..\\plugins\\veeValidate.js (mode: 'all')
+import nuxt_plugin_veeValidate_46310b42 from 'nuxt_plugin_veeValidate_46310b42' // Source: ..\\plugins\\veeValidate.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -58,7 +58,7 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext, config)
@@ -206,7 +206,7 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_lazyload_69a37db4(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_veeValidate_46310b42 === 'function') {
+  if (process.client && typeof nuxt_plugin_veeValidate_46310b42 === 'function') {
     await nuxt_plugin_veeValidate_46310b42(app.context, inject)
   }
 
