@@ -14,15 +14,8 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
-  mode: 'spa',
-  target: 'server',
+  ssr:false,
   generate: {
-    async routes () {
-      const articles = await fetch('articles') // APIでデータを取るとする
-      return [
-        ...articles.map(article => article.path),
-      ]
-    },
     fallback: true
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
