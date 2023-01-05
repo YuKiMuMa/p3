@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <div class="mainp">
       <Logo />
       <h1 class="title">
         YuKiMuMa
@@ -88,7 +88,8 @@
         </a>
 
       </div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/7uNgaRtsAn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="youtube">
+      <iframe id=content width="100%" height="100%" src="https://www.youtube.com/embed/7uNgaRtsAn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </div>
   </div>
 </template>
@@ -129,7 +130,9 @@ h1{
   align-items: center;
   text-align: center;
 }
+.mainp{
 
+}
 .title {
   font-family:
     'Quicksand',
@@ -143,7 +146,7 @@ h1{
     sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 70px;
   color: #35495e;
   letter-spacing: 1px;
 }
@@ -164,10 +167,24 @@ iframe {
   margin: auto;
   padding-top: 50px;
 }
+.youtube{
+    position: relative;
+    display: flex;
+    width:100%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto 
 
+}
 @keyframes appear {
   0% {
     opacity: 0;
   }
 }
+@media screen and (max-width: 850px){
+  .youtube{
+    width: 100%;
+  }
+}
+
 </style>
