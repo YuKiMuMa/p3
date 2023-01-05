@@ -130,7 +130,7 @@ hr {
 @media screen and (max-width: 850px){
   .bb{
     display: block;
-    padding: 100px;
+    padding: 50px 20px;
     width:100%;
     background-color: rgb(255, 255, 255);
   }

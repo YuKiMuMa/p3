@@ -67,6 +67,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 
 .card {
@@ -104,5 +105,10 @@ export default {
 a.card-description{
   text-decoration: none;
   color: #4b4b4b;
+}
+@media screen and (max-width: 850px){
+  .card{
+    width: 90%;
+  }
 }
 </style>
