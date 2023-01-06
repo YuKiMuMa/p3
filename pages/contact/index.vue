@@ -216,4 +216,10 @@ button:hover{
 .formbu{
   margin: 10px auto;
 }
+@media screen and (max-width: 700px){
+
+  .con{
+    width: 80%;
+  }
+}
 </style>
