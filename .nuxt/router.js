@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _264e2b15 = () => interopDefault(import('..\\pages\\blogs\\index.vue' /* webpackChunkName: "pages/blogs/index" */))
-const _ceebd4b4 = () => interopDefault(import('..\\pages\\contact\\index.vue' /* webpackChunkName: "pages/contact/index" */))
-const _147d1404 = () => interopDefault(import('..\\pages\\works\\index.vue' /* webpackChunkName: "pages/works/index" */))
-const _249789cd = () => interopDefault(import('..\\pages\\blogs\\_slug.vue' /* webpackChunkName: "pages/blogs/_slug" */))
-const _12c672bc = () => interopDefault(import('..\\pages\\works\\_slug.vue' /* webpackChunkName: "pages/works/_slug" */))
-const _963897e4 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _04db3f9e = () => interopDefault(import('..\\pages\\blogs\\index.vue' /* webpackChunkName: "pages/blogs/index" */))
+const _a0d5187c = () => interopDefault(import('..\\pages\\contact\\index.vue' /* webpackChunkName: "pages/contact/index" */))
+const _287d6dc0 = () => interopDefault(import('..\\pages\\works\\index.vue' /* webpackChunkName: "pages/works/index" */))
+const _0848822e = () => interopDefault(import('..\\pages\\blogs\\_slug.vue' /* webpackChunkName: "pages/blogs/_slug" */))
+const _2beab050 = () => interopDefault(import('..\\pages\\works\\_slug.vue' /* webpackChunkName: "pages/works/_slug" */))
+const _56c6731c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/blogs",
-    component: _264e2b15,
+    component: _04db3f9e,
     name: "blogs"
   }, {
     path: "/contact",
-    component: _ceebd4b4,
+    component: _a0d5187c,
     name: "contact"
   }, {
     path: "/works",
-    component: _147d1404,
+    component: _287d6dc0,
     name: "works"
   }, {
     path: "/blogs/:slug",
-    component: _249789cd,
+    component: _0848822e,
     name: "blogs-slug"
   }, {
     path: "/works/:slug",
-    component: _12c672bc,
+    component: _2beab050,
     name: "works-slug"
   }, {
     path: "/",
-    component: _963897e4,
+    component: _56c6731c,
     name: "index"
   }],
 
