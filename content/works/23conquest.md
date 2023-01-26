@@ -10,8 +10,8 @@ Adobe Photoshop
 
 <hr>
 
-![alt text](http://drive.google.com/uc?export=view&id=1Ee_DQMvnNttZNj3cRbZhPBscvZsgMcCK)
+![alt text](https://drive.google.com/uc?export=view&id=1Ee_DQMvnNttZNj3cRbZhPBscvZsgMcCK)
 
-![alt text](http://drive.google.com/uc?export=view&id=1DrmzCfwL-IUA11sAoiRKTVgwJc9WPrgg)
+![alt text](https://drive.google.com/uc?export=view&id=1DrmzCfwL-IUA11sAoiRKTVgwJc9WPrgg)
 
 

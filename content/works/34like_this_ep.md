@@ -12,6 +12,6 @@ Adobe Photoshop
 
 <hr>
 
-![alt text](http://drive.google.com/uc?export=view&id=1LpFotmDluYO1uKmLRE-BoS3tRrHC7YZK)
+![alt text](https://drive.google.com/uc?export=view&id=1LpFotmDluYO1uKmLRE-BoS3tRrHC7YZK)
 
-![alt text](http://drive.google.com/uc?export=view&id=1oRasP7_LKh1ic15DkKX27Ix0_PH11kIt)
+![alt text](https://drive.google.com/uc?export=view&id=1oRasP7_LKh1ic15DkKX27Ix0_PH11kIt)
