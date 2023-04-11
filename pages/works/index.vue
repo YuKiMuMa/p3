@@ -98,7 +98,6 @@ export default {
   line-height: 0.8;
   font-family: 'MuseoSansRounded-900', 'Arial Black', sans-serif;
   padding: 0 30px;
-  text-transform: uppercase;
   text-align: left;
   z-index: 1000;
   opacity: 0;

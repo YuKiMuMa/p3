@@ -103,6 +103,10 @@ h1{
     margin-right: auto 
 
 }
+.insta{
+  margin:0 auto;
+  max-width: 530px;
+}
 .scloud{
     position: relative;
     display: flex;
