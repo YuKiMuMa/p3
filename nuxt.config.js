@@ -7,7 +7,11 @@ export default {
     },
 
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Spectral:wght@200;300&display=swap' }
     ]
   },
 

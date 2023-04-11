@@ -62,7 +62,8 @@ body {
 }
 .header1 li {
    margin: 0 0 0 30px;
-   font-size: 14px;
+   font-size: 16px;
+   font-family: 'Spectral', serif;
 }
 
 .header1 nav {

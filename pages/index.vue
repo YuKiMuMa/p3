@@ -134,20 +134,11 @@ h1{
 
 }
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
   display: block;
+  font-family: 'Spectral', serif;
   font-weight: 300;
   font-size: 70px;
-  color: #35495e;
+  color: #000000;
   letter-spacing: 1px;
 }
 
