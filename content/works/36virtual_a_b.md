@@ -12,7 +12,7 @@ Adobe AfterEffects
 
 <hr>
 
-Adomiori様のMVを制作させていただきました。
+Adomiori様のMVを制作しました。
 
 <hr>
 

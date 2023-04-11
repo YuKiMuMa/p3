@@ -11,7 +11,7 @@ Adobe AfterEffects
 
 <hr>
 
-Giga様のMVを制作させていただきました。
+Giga様のMVを制作しました。
 
 <hr>
 

@@ -11,7 +11,7 @@ Adobe AfterEffects
 
 <hr>
 
-八王子P × kz(livetune) 「Glimmer feat. 初音ミク」のMVを制作させていただきました。
+八王子P × kz(livetune) 「Glimmer feat. 初音ミク」のMVを制作しました。
 
 Illustrator : ずもち https://twitter.com/zumoti4 
 

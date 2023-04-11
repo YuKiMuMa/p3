@@ -14,7 +14,7 @@ Adobe AfterEffects
 
 <hr>
 
-雄之助様のMVを制作させていただきました。
+雄之助様のMVを制作しました。
 
 New Vocaloid Album「Proto」
 

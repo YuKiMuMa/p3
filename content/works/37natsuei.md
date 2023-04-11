@@ -8,7 +8,7 @@ Adobe Photoshop
 
 <hr>
 
-Nyangazer様のMV用のイラストを描かせていただきました。
+Nyangazer様のMV用のイラストを描きました。
 
 <hr>
 
