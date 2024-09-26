@@ -19,8 +19,8 @@ Y-ACE様の1stEP
 https://linkco.re/5E2hRVDq
 
 
-![alt text](https://drive.google.com/uc?export=view&id=19iwFJ9i245OZ0pDoixXGaE9AHKVj0kzP)
+![alt text](https://lh3.google.com/u/0/d/19iwFJ9i245OZ0pDoixXGaE9AHKVj0kzP)
 
-![alt text](https://drive.google.com/uc?export=view&id=1xv0woBVg7FoJ5Y8M5QzvfJjyp3hhBpVm)
+![alt text](https://lh3.google.com/u/0/d/1xv0woBVg7FoJ5Y8M5QzvfJjyp3hhBpVm)
 
 

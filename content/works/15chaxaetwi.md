@@ -16,9 +16,9 @@ Image-Line FL Studio
 <iframe id=content width="100%" height="100%" src="https://www.youtube.com/embed/nq88Fgf7gk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
-![alt text](https://drive.google.com/uc?export=view&id=1JENx7wUhROI9F51x6T1WDlfHuwyxD-9Z)
+![alt text](https://lh3.google.com/u/0/d/1JENx7wUhROI9F51x6T1WDlfHuwyxD-9Z)
 
-![alt text](https://drive.google.com/uc?export=view&id=1Pgrw-Jq4lS9AUBbJS-u2jiPC24LeCu_G)
+![alt text](https://lh3.google.com/u/0/d/1Pgrw-Jq4lS9AUBbJS-u2jiPC24LeCu_G)
 
 ロゴアイデアはSELDOさんより
 
@@ -31,8 +31,8 @@ https://twitter.com/sl_dndn/status/1094202808742506496
 </div>
 </div>
 
-![alt text](https://drive.google.com/uc?export=view&id=1LEEFsNmrEKex05nnljmyUmJkeqV_l8CS)
+![alt text](https://lh3.google.com/u/0/d/1LEEFsNmrEKex05nnljmyUmJkeqV_l8CS)
 
-![alt text](https://drive.google.com/uc?export=view&id=1sbTzaHFM0qmU5k2DK_D6qLqdmLYZmjRh)
+![alt text](https://lh3.google.com/u/0/d/1sbTzaHFM0qmU5k2DK_D6qLqdmLYZmjRh)
 
-![alt text](https://drive.google.com/uc?export=view&id=19W_6v74RnGC8L5YDO95Hn_B3LLHPGGY7)
+![alt text](https://lh3.google.com/u/0/d/19W_6v74RnGC8L5YDO95Hn_B3LLHPGGY7)

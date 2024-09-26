@@ -16,7 +16,7 @@ Adobe Photoshop
 
 https://frc2019autumn.tumblr.com/
 
-![alt text](https://drive.google.com/uc?export=view&id=1AiZJmFrlhhAde-cRK72xOueSVYxyU__6)
+![alt text](https://lh3.google.com/u/0/d/1AiZJmFrlhhAde-cRK72xOueSVYxyU__6)
 
-![alt text](https://drive.google.com/uc?export=view&id=1pVy_ngnmndcISgkC_IqUMaw3kbuu7VLx)
+![alt text](https://lh3.google.com/u/0/d/1pVy_ngnmndcISgkC_IqUMaw3kbuu7VLx)
 

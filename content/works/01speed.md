@@ -11,7 +11,7 @@ Adobe Photoshop
 
 
 
-![alt text](https://drive.google.com/uc?export=view&id=1PMIoAgZG8nMmjpb-DVXpO4PMcwuILvzR)
+![alt text](https://lh3.google.com/u/0/d/1PMIoAgZG8nMmjpb-DVXpO4PMcwuILvzR)
 
-![alt text](https://drive.google.com/uc?export=view&id=1nmNpl4mc_EYMSEr6QGnLSBKRIzRIrHZi)
+![alt text](https://lh3.google.com/u/0/d/1nmNpl4mc_EYMSEr6QGnLSBKRIzRIrHZi)
 

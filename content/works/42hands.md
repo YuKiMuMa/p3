@@ -15,11 +15,11 @@ Adobe Photoshop
 <hr>
 
 
-![alt text](http://drive.google.com/uc?export=view&id=1Bm5nlCPNwK2mbHp1qDeGv5I2gOUDw2qA)
+![alt text](https://lh3.google.com/u/0/d/1Bm5nlCPNwK2mbHp1qDeGv5I2gOUDw2qA)
 
-![alt text](http://drive.google.com/uc?export=view&id=1YVH5BWaYiUGrjViO2zONhutma6gOUziO)
+![alt text](https://lh3.google.com/u/0/d/1YVH5BWaYiUGrjViO2zONhutma6gOUziO)
 
-![alt text](http://drive.google.com/uc?export=view&id=14FbSHfhQOdv3oySo09rmjO9LtIZv_UMV)
+![alt text](https://lh3.google.com/u/0/d/14FbSHfhQOdv3oySo09rmjO9LtIZv_UMV)
 
 
 

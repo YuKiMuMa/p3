@@ -12,11 +12,11 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_496b8161 from 'nuxt_plugin_plugin_496b8161' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_webfontloader_01057df8 from 'nuxt_plugin_webfontloader_01057df8' // Source: .\\webfontloader.js (mode: 'client')
-import nuxt_plugin_pluginclient_427b4997 from 'nuxt_plugin_pluginclient_427b4997' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_af9689c2 from 'nuxt_plugin_pluginserver_af9689c2' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_axios_3ad93f04 from 'nuxt_plugin_axios_3ad93f04' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_1063b113 from 'nuxt_plugin_plugin_1063b113' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_webfontloader_1c5519b6 from 'nuxt_plugin_webfontloader_1c5519b6' // Source: .\\webfontloader.js (mode: 'client')
+import nuxt_plugin_pluginclient_6d905049 from 'nuxt_plugin_pluginclient_6d905049' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_596c7c5e from 'nuxt_plugin_pluginserver_596c7c5e' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_axios_1a65e9b6 from 'nuxt_plugin_axios_1a65e9b6' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_lazyload_69a37db4 from 'nuxt_plugin_lazyload_69a37db4' // Source: ..\\plugins\\lazyload.js (mode: 'all')
 import nuxt_plugin_veeValidate_46310b42 from 'nuxt_plugin_veeValidate_46310b42' // Source: ..\\plugins\\veeValidate.js (mode: 'client')
 
@@ -182,24 +182,24 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_496b8161 === 'function') {
-    await nuxt_plugin_plugin_496b8161(app.context, inject)
+  if (typeof nuxt_plugin_plugin_1063b113 === 'function') {
+    await nuxt_plugin_plugin_1063b113(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_webfontloader_01057df8 === 'function') {
-    await nuxt_plugin_webfontloader_01057df8(app.context, inject)
+  if (process.client && typeof nuxt_plugin_webfontloader_1c5519b6 === 'function') {
+    await nuxt_plugin_webfontloader_1c5519b6(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_427b4997 === 'function') {
-    await nuxt_plugin_pluginclient_427b4997(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_6d905049 === 'function') {
+    await nuxt_plugin_pluginclient_6d905049(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_af9689c2 === 'function') {
-    await nuxt_plugin_pluginserver_af9689c2(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_596c7c5e === 'function') {
+    await nuxt_plugin_pluginserver_596c7c5e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_3ad93f04 === 'function') {
-    await nuxt_plugin_axios_3ad93f04(app.context, inject)
+  if (typeof nuxt_plugin_axios_1a65e9b6 === 'function') {
+    await nuxt_plugin_axios_1a65e9b6(app.context, inject)
   }
 
   if (typeof nuxt_plugin_lazyload_69a37db4 === 'function') {

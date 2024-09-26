@@ -25,11 +25,11 @@ effects : ray-mmd,KiraKira_v2,FXAA,WorkingFloorX
 </div>
 </div>
 
-![alt text](https://drive.google.com/uc?export=view&id=1xfs3pNLIgyfNadYq1xuEauB8VuHe5RM9)
+![alt text](https://lh3.google.com/u/0/d/1xfs3pNLIgyfNadYq1xuEauB8VuHe5RM9)
 
-![alt text](https://drive.google.com/uc?export=view&id=1fzzeAIW70LJLwVgEU_PKMRMSzElp7GGU)
+![alt text](https://lh3.google.com/u/0/d/1fzzeAIW70LJLwVgEU_PKMRMSzElp7GGU)
 
-![alt text](https://drive.google.com/uc?export=view&id=1jYiI7xw2Gv7VRs-ZnXz6alzZshm87C_W)
+![alt text](https://lh3.google.com/u/0/d/1jYiI7xw2Gv7VRs-ZnXz6alzZshm87C_W)
 
-![alt text](https://drive.google.com/uc?export=view&id=1Fm_Ouo0_7LkCOCAYVIDoUF9Zn9AYE2Le)
+![alt text](https://lh3.google.com/u/0/d/1Fm_Ouo0_7LkCOCAYVIDoUF9Zn9AYE2Le)
 

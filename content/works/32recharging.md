@@ -13,6 +13,6 @@ Adobe Photoshop
 <hr>
 
 
-![alt text](https://drive.google.com/uc?export=view&id=1aNFCX96HGN0OQIMeefnD5n_13m7GavYw)
+![alt text](https://lh3.google.com/u/0/d/1aNFCX96HGN0OQIMeefnD5n_13m7GavYw)
 
-![alt text](https://drive.google.com/uc?export=view&id=13wqLrhsSotUMw-83BU3DVLcTOi-LKyOi)
+![alt text](https://lh3.google.com/u/0/d/13wqLrhsSotUMw-83BU3DVLcTOi-LKyOi)

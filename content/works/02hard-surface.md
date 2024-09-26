@@ -13,10 +13,10 @@ Adobe AfterEffects
 
 
 
-![alt text](https://drive.google.com/uc?export=view&id=1IoGvDP04xTISNkG-9DfWTrjoGSnxev39)
+![alt text](https://lh3.google.com/u/0/d/1IoGvDP04xTISNkG-9DfWTrjoGSnxev39)
 
-![alt text](https://drive.google.com/uc?export=view&id=1Mwwa3UsPnuP-66caqYfEWvkMjUb_9DlZ)
+![alt text](https://lh3.google.com/u/0/d/1Mwwa3UsPnuP-66caqYfEWvkMjUb_9DlZ)
 
-![alt text](https://drive.google.com/uc?export=view&id=1_zVHga3khiLo8srnn3l-BP6M1y6MRuX0)
+![alt text](https://lh3.google.com/u/0/d/1_zVHga3khiLo8srnn3l-BP6M1y6MRuX0)
 
-![alt text](https://drive.google.com/uc?export=view&id=1yu7pZCZHpK3Z38LhB0QskwcAlsFxL2Zb)
+![alt text](https://lh3.google.com/u/0/d/1yu7pZCZHpK3Z38LhB0QskwcAlsFxL2Zb)

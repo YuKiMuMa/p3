@@ -32,7 +32,7 @@ https://twitter.com/zumoti4
 <iframe id=content width="100%" height="100%" src="https://www.youtube.com/embed/AKxei8pnRZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 
-![alt text](http://drive.google.com/uc?export=view&id=1oeRQ-31O29yLag525rYUyvvwCm1WPhV3)
+![alt text](https://lh3.google.com/u/0/d/1oeRQ-31O29yLag525rYUyvvwCm1WPhV3)
 
-![alt text](http://drive.google.com/uc?export=view&id=1HaxgM4nvcjqCWJQXcsVniUwJrrnTSNiL)
+![alt text](https://lh3.google.com/u/0/d/1HaxgM4nvcjqCWJQXcsVniUwJrrnTSNiL)
 

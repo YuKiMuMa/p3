@@ -20,4 +20,4 @@ Adobe After Effects
 
 <hr>
 
-![alt text](https://drive.google.com/uc?export=view&id=16KOO9c_HbvTSTnnjtnPR5dLnIc2a7pxZ)
+![alt text](https://lh3.google.com/u/0/d/16KOO9c_HbvTSTnnjtnPR5dLnIc2a7pxZ)

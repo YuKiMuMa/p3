@@ -19,4 +19,4 @@ Image-Line FL Studio
 <div class="youtube">
 <iframe id=content width="100%" height="100%" src="https://www.youtube.com/embed/--n0LRfN19k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-![alt text](https://drive.google.com/uc?export=view&id=1ibQFeRHlHTSXNAPlKCWyjYCSTfTR6Lyb)
+![alt text](https://lh3.google.com/u/0/d/1ibQFeRHlHTSXNAPlKCWyjYCSTfTR6Lyb)
