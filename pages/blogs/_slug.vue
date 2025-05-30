@@ -74,6 +74,9 @@ hr {
    height: 1px;    
    padding-bottom: 30px; 
 }    
+th{
+  text-align: initial;
+}
 .content img{
   max-width: 100%;
   animation: fadeIn 0.7s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
@@ -143,7 +146,9 @@ hr {
   }
 }
 h2{
-  padding-top: 50px;
+  padding-top: 20px;
+  background:#d8e8ef;
+  padding-bottom: 20px;
 }
 h3{
   padding-top: 20px;
@@ -151,6 +156,7 @@ h3{
 h4{
   padding-top: 10px;
 }
+
 
 
 </style>
