@@ -147,7 +147,6 @@ th{
 }
 h2{
   padding-top: 20px;
-  background:#d8e8ef;
   padding-bottom: 20px;
 }
 h3{

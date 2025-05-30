@@ -82,6 +82,8 @@ export default {
   align-items: center;
   background-color: #ffff;
   transition:		all 0.5s ease;
+  box-shadow: 0 0.1em 0.6rem -0.2rem rgba(0,0,0,0.5);
+
 }
 
 .card:hover {
