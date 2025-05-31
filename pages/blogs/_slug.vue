@@ -121,7 +121,7 @@ th{
   background-color:#ffffff;
   margin-left:30px;
   text-decoration: none;
-  background-color: #f2f4f7;
+  background-color: #f5f5f5;
 }
 .toc{
   padding:20px;
@@ -148,6 +148,8 @@ th{
 h2{
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 10px;
+  margin: 56px 0 16px;
 }
 h3{
   padding-top: 20px;
