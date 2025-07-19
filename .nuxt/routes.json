@@ -3,36 +3,42 @@
     "name": "blogs",
     "path": "/blogs",
     "component": "D:\\\\SynologyDrive\\\\programs\\\\p3\\\\pages\\\\blogs\\\\index.vue",
-    "chunkName": "pages/blogs/index"
+    "chunkName": "pages/blogs/index",
+    "_name": "_dcc0676e"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "D:\\\\SynologyDrive\\\\programs\\\\p3\\\\pages\\\\contact\\\\index.vue",
-    "chunkName": "pages/contact/index"
+    "chunkName": "pages/contact/index",
+    "_name": "_75f839da"
   },
   {
     "name": "works",
     "path": "/works",
     "component": "D:\\\\SynologyDrive\\\\programs\\\\p3\\\\pages\\\\works\\\\index.vue",
-    "chunkName": "pages/works/index"
+    "chunkName": "pages/works/index",
+    "_name": "_7fceb538"
   },
   {
     "name": "blogs-slug",
     "path": "/blogs/:slug",
     "component": "D:\\\\SynologyDrive\\\\programs\\\\p3\\\\pages\\\\blogs\\\\_slug.vue",
-    "chunkName": "pages/blogs/_slug"
+    "chunkName": "pages/blogs/_slug",
+    "_name": "_e02da9fe"
   },
   {
     "name": "works-slug",
     "path": "/works/:slug",
     "component": "D:\\\\SynologyDrive\\\\programs\\\\p3\\\\pages\\\\works\\\\_slug.vue",
-    "chunkName": "pages/works/_slug"
+    "chunkName": "pages/works/_slug",
+    "_name": "_7e1813f0"
   },
   {
     "name": "index",
     "path": "/",
     "component": "D:\\\\SynologyDrive\\\\programs\\\\p3\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_82d3754c"
   }
 ]
