@@ -26,6 +26,4 @@ https://twitter.com/zumoti4
 
 
 
-![alt text](https://lh3.google.com/u/0/d/1Bt-Hgigh17dzcpBGj7XxpqnBl-UgmETo)
-
 
